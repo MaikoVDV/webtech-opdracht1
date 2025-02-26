@@ -48,6 +48,7 @@ body {
 
 header {
   position: sticky;
+  z-index: 1;
   top: 0;
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -93,6 +94,50 @@ nav ul li a:active {
 main {
   padding: 1em;
   text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  padding: 0 30% 0 30%;
+}
+
+span {
+  display: block;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card a {
+  display: block;
+  text-decoration: none;
+  color: #eaeaea;
 }
 
 footer {
@@ -101,8 +146,8 @@ footer {
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
   color: #fff;
-  text-align: center;
-  padding: 1em 0;
+  text-align: left;
+  padding: 1em 2em;
   width: 100%;
   position: fixed;
   bottom: 0px;
@@ -137,4 +182,12 @@ th,
 td {
   padding: 0.5em;
   text-align: left;
+}
+
+.align-l {
+  text-align: left !important;
+}
+
+.align-c {
+  text-align: center !important;
 }
