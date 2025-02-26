@@ -106,7 +106,8 @@ article {
 
 span {
   display: block;
-  width: 100%;
+  width: 60%;
+  margin: 20px 0 30px 0;
   border-top: 1px solid #ccc;
 }
 
@@ -122,6 +123,7 @@ span {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
+  transition: transform 0.2s ease-in-out, box-shadow 0.6s;
   color: #fff;
   padding: 10px;
   width: 200px;
@@ -140,6 +142,11 @@ span {
   color: #eaeaea;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 footer {
   background: rgba(31, 31, 31, 0.6);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -156,15 +163,20 @@ footer {
   align-items: center;
   gap: 1rem;
 }
+
 footer a img {
   width: 3m;
   height: 3rem;
   transition: opacity 0.2s ease-in-out;
 }
+
 footer a img:hover {
   opacity: 0.7;
 }
 
+#homepage {
+  position: relative;
+}
 
 table {
   width: 100%;
