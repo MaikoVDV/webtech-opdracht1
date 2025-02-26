@@ -30,9 +30,6 @@ body {
 .profile-row > * {
     justify-content: center;
 }
-.profile-row > p {
-
-}
 .profile-row > img {
     max-height: 12rem;
     border-radius: 8px;
