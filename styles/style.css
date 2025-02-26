@@ -190,13 +190,19 @@ table  a:visited {
 table,
 th,
 td {
-  border: 1px solid #333;
+  border: 2px solid rgba(255, 255, 255, 0.12);
 }
 
 th,
 td {
   padding: 0.5em;
+}
+td {
   text-align: left;
+}
+th {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .align-l {
