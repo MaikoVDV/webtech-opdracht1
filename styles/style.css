@@ -106,7 +106,20 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
+footer a img {
+  width: 3m;
+  height: 3rem;
+  transition: opacity 0.2s ease-in-out;
+}
+footer a img:hover {
+  opacity: 0.7;
+}
+
 
 table {
   width: 100%;
