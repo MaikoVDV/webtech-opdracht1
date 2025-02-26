@@ -183,6 +183,12 @@ table {
   border-collapse: collapse;
   margin: 1em 0;
 }
+table  a {
+  color: white;
+}
+table  a:visited {
+  color: lightgrey;
+}
 
 table,
 th,
