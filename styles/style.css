@@ -8,7 +8,6 @@ html::-webkit-scrollbar {
 
 .montserrat {
   font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
 }
@@ -70,6 +69,7 @@ nav ul {
 nav ul li {
   margin: 0 15px;
   padding: 0 20px 0 20px;
+  align-content: center;
 }
 
 nav ul li a {
@@ -166,7 +166,7 @@ footer {
 }
 
 footer a img {
-  width: 3m;
+  width: 3em;
   height: 3rem;
   transition: opacity 0.2s ease-in-out;
 }
